@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <link href="static/main.css" rel="stylesheet" type="text/css" media="all">
+</head>
+    <body>
+      <h1 style="text-align:center;">Временный код отправлен вам на email</h1>
+    	<div class="box">
+  			<h1>Введите код</h1>
+  			<form action="/temp_code" method="post">
+    			<input type="text" name="temp_code" id="temp_code" placeholder="Введите временный код" required/>
+    			<br>
+    			<input type="submit" class="button" value="Отправить"/>
+  			</form>
+        </div>
+    {%if tempcodefalse%}
+    <div class="Temp Code False" style="margin-left:20%">
+        <h2>Вы ввели неправильный код подтверждения, повторите попытку!</h2>
+    </div>
+    {%endif%}
+</body>
+</html>

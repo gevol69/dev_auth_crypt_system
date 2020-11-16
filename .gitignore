@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+dev_auth_crypt_system_lab_1/Титульник.pdf
+.vscode/
+dev_auth_crypt_system_lab_2/Титульник.pdf
+dev_auth_crypt_system_lab_2/sql.py

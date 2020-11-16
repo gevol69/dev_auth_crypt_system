@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <link href="static/main.css" rel="stylesheet" type="text/css" media="all">
+</head>
+    <body>
+      <h1 style="text-align:center;">Парольная аутентификация</h1>
+    	<div class="box">
+  			<h1>Вход</h1>
+  			<form action="/" method="post">
+    			<input type="text" name="username" id="username" placeholder="Имя пользователя" required/>
+    			<br>
+    			<input type="password" name="password" id="password" placeholder="Пароль" required/>
+    			<br>
+    			<input type="submit" class="button" value="Войти"/>
+  			</form>
+        </div>
+    {%if loggedfalse%}
+    <div class="Login False" style="margin-left:20%">
+        <h2>Такого пользователя не существует!</h2>
+    </div>
+    {%endif%}
+    {%if Passwordfalse%}
+    <div class="Password False" style="margin-left:20%">
+        <h2>Вы ввели неправильный пароль!</h2>
+    </div>
+    {%endif%}
+</body>
+</html>
